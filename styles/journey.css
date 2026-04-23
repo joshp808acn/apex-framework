@@ -410,6 +410,21 @@ body { background: var(--color-bg-secondary); }
   background: #A03838;
 }
 
+@media (min-width: 1024px) {
+  .journey-header p { font-size: 17px; }
+  .stage-name { font-size: 21px; }
+  .patient-voice { font-size: 15px; }
+  .tension-description { font-size: 15px; }
+  .risk-list li { font-size: 15px; }
+  .risk-more { font-size: 13px; }
+  .journey-detail__name { font-size: 27px; }
+  .journey-detail__quote { font-size: 17px; }
+  .detail-col__text { font-size: 17px; }
+  .condition-note-list__name { font-size: 16px; }
+  .condition-note-list__note { font-size: 15px; }
+  .fail-list li { font-size: 16px; }
+}
+
 @media (max-width: 640px) {
   .journey-header {
     padding: 24px 16px 20px;

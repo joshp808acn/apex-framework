@@ -324,6 +324,17 @@ body { background: var(--color-bg-secondary); }
   line-height: 1.55;
 }
 
+@media (min-width: 1024px) {
+  .accountability-header p { font-size: 17px; }
+  .acct-col-header__abbr { font-size: 16px; }
+  .acct-row-name { font-size: 16px; }
+  .acct-detail__title { font-size: 25px; }
+  .acct-detail__desc { font-size: 16px; }
+  .acct-owns__value { font-size: 16px; }
+  .must-ask-block__text { font-size: 17px; }
+  .if-absent-block__text { font-size: 16px; }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .accountability-header {

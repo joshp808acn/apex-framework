@@ -378,6 +378,23 @@ body { background: var(--color-bg-secondary); }
   line-height: 1.5;
 }
 
+@media (min-width: 1024px) {
+  .framework-header p { font-size: 17px; }
+  .principle-card__name { font-size: 19px; }
+  .detail-panel__name { font-size: 27px; }
+  .detail-panel__definition { font-size: 21px; }
+  .tab-btn { font-size: 16px; }
+  .overview-label { font-size: 13px; }
+  .system-impact { font-size: 17px; }
+  .moment-card__text { font-size: 16px; }
+  .danger-block__text { font-size: 16px; }
+  .failure-mode-name { font-size: 17px; }
+  .failure-mode-breakdown,
+  .failure-mode-consequence { font-size: 16px; }
+  .vendor-card__question { font-size: 17px; }
+  .vendor-card__intent { font-size: 15px; }
+}
+
 @media (max-width: 900px) {
   .principle-grid {
     grid-template-columns: repeat(4, 1fr);
