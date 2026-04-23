@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX — Patient journey map</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/journey.css">
+</head>
+<body>
+  <nav class="apex-nav" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="apex-nav__logo">AI Patient Experience Framework (APEX)</a>
+    <ul class="apex-nav__links">
+      <li><a href="context.html">The case</a></li>
+      <li><a href="framework.html">Framework</a></li>
+      <li><a href="journey.html" class="active">Journey map</a></li>
+      <li><a href="accountability.html">Accountability</a></li>
+    </ul>
+  </nav>
+
+  <header class="journey-header">
+    <div class="journey-header__meta">APEX — Patient journey</div>
+    <h1>Patient journey map</h1>
+    <p>Six stages of a patient's interaction with an AI-assisted health service. Select a stage to explore conditions and risks in detail.</p>
+  </header>
+
+  <div class="journey-track-wrapper">
+    <div id="journey-track" class="journey-track" role="list" aria-label="Journey stages"></div>
+  </div>
+
+  <div id="journey-accordion" class="journey-accordion" role="list" aria-label="Journey stages (mobile)"></div>
+
+  <div id="journey-detail" class="journey-detail" role="region" aria-label="Stage detail"></div>
+
+  <script src="../scripts/data.js"></script>
+  <script src="../scripts/journey.js"></script>
+</body>
+</html>

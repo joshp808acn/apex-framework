@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX — Accountability map</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/accountability.css">
+</head>
+<body>
+  <nav class="apex-nav" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="apex-nav__logo">AI Patient Experience Framework (APEX)</a>
+    <ul class="apex-nav__links">
+      <li><a href="context.html">The case</a></li>
+      <li><a href="framework.html">Framework</a></li>
+      <li><a href="journey.html">Journey map</a></li>
+      <li><a href="accountability.html" class="active">Accountability</a></li>
+    </ul>
+  </nav>
+
+  <header class="accountability-header">
+    <div class="accountability-header__meta">APEX — Accountability</div>
+    <h1>Who owns what</h1>
+    <p id="accountability-intro"></p>
+  </header>
+
+  <div class="acct-matrix-wrapper">
+    <div class="acct-matrix" id="acct-matrix" role="grid" aria-label="Accountability matrix"></div>
+  </div>
+
+  <div class="acct-detail" id="acct-detail" role="region" aria-label="Role detail"></div>
+
+  <script src="../scripts/data.js"></script>
+  <script src="../scripts/accountability.js"></script>
+</body>
+</html>

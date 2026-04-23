@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX — AI Patient Experience Framework</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <style>
+    .landing {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      position: relative;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .landing__video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 896px;
+      height: auto;
+      z-index: 0;
+    }
+
+    .landing > *:not(.landing__video) {
+      position: relative;
+      z-index: 1;
+    }
+
+    .landing__logotype {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-text-tertiary);
+      margin-bottom: 16px;
+    }
+
+    .landing__title {
+      font-size: 26px;
+      font-weight: 500;
+      color: var(--color-text-primary);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .landing__summary {
+      font-size: 14px;
+      color: var(--color-text-secondary);
+      text-align: center;
+      max-width: 480px;
+      line-height: 1.6;
+      margin-bottom: 48px;
+    }
+
+    .nav-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      width: 100%;
+      max-width: 1080px;
+    }
+
+    .nav-card {
+      display: block;
+      padding: 24px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      background: var(--color-bg-secondary);
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .nav-card:hover {
+      border-color: var(--color-border-strong);
+      background: var(--color-bg-tertiary);
+    }
+
+    .nav-card__label {
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-tertiary);
+      margin-bottom: 8px;
+    }
+
+    .nav-card__title {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-text-primary);
+      margin-bottom: 6px;
+    }
+
+    .nav-card__desc {
+      font-size: 12px;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .nav-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      .nav-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="landing">
+    <video class="landing__video" autoplay muted loop playsinline>
+      <source src="styles/custom-rad-hero-bg-video.mp4" type="video/mp4">
+    </video>
+    <div class="landing__logotype">APEX</div>
+    <h1 class="landing__title">AI Patient Experience Framework</h1>
+    <p class="landing__summary">
+      An interactive evaluation framework for health organisations assessing the safety, equity, and accountability of patient-facing AI systems.
+    </p>
+    <div class="nav-cards">
+      <a href="pages/context.html" class="nav-card">
+        <div class="nav-card__label">The case</div>
+        <div class="nav-card__title">Why APEX exists</div>
+        <div class="nav-card__desc">The rationale for governing AI at the front door of the health system.</div>
+      </a>
+      <a href="pages/framework.html" class="nav-card">
+        <div class="nav-card__label">View 1</div>
+        <div class="nav-card__title">Framework explorer</div>
+        <div class="nav-card__desc">Seven principles with failure modes and vendor assessment questions.</div>
+      </a>
+      <a href="pages/journey.html" class="nav-card">
+        <div class="nav-card__label">View 2</div>
+        <div class="nav-card__title">Patient journey map</div>
+        <div class="nav-card__desc">Six-stage care journey with APEX conditions and key risks at each stage.</div>
+      </a>
+      <a href="pages/accountability.html" class="nav-card">
+        <div class="nav-card__label">View 3</div>
+        <div class="nav-card__title">Accountability map</div>
+        <div class="nav-card__desc">Who owns each APEX condition, what they must ask, and what breaks when they don't.</div>
+      </a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'GT Sectra Fine';
+  src: url('../fonts/GT-Sectra-Fine-Book.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Sectra Fine';
+  src: url('../fonts/GT-Sectra-Fine-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Sectra Fine';
+  src: url('../fonts/GT-Sectra-Fine-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --font-serif: 'GT Sectra Fine', Georgia, serif;
+  --color-text-primary: #f0ede8;
+  --color-text-secondary: #aaa;
+  --color-text-tertiary: #555;
+  --color-bg-primary: #000000;
+  --color-bg-secondary: #111111;
+  --color-bg-tertiary: #1a1a1a;
+  --color-border: rgba(255,255,255,0.1);
+  --color-border-strong: rgba(255,255,255,0.2);
+  --color-accent-blue: #378ADD;
+  --color-accent-blue-bg: rgba(55,138,221,0.12);
+  --color-accent-blue-text: #7AB8F0;
+  --color-accent-red: #E24B4A;
+  --color-accent-red-bg: rgba(226,75,74,0.12);
+  --color-accent-red-text: #F09090;
+  --color-accent-purple: #A100FF;
+  --color-accent-teal: #1D9E75;
+  --color-accent-amber: #BA7517;
+  --font-sans: system-ui, -apple-system, sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  color: var(--color-text-primary);
+  background: var(--color-bg-primary);
+  line-height: 1.5;
+}
+
+h1 { font-size: 26px; font-weight: 500; }
+h2 { font-size: 22px; font-weight: 500; }
+h3 { font-size: 16px; font-weight: 500; }
+
+.label {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-tertiary);
+}
+
+.text-secondary { color: var(--color-text-secondary); font-size: 13px; }
+.text-tertiary  { color: var(--color-text-tertiary);  font-size: 13px; }
+
+/* Nav */
+.apex-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 64px;
+  border-bottom: 1px solid var(--color-border-strong);
+  background: var(--color-bg-primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.apex-nav__logo {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.apex-nav__links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.apex-nav__links a {
+  font-size: 14px;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+}
+
+.apex-nav__links a:hover {
+  color: var(--color-text-primary);
+  border-bottom-color: var(--color-border-strong);
+}
+
+.apex-nav__links a.active {
+  color: var(--color-text-primary);
+  border-bottom-color: var(--color-accent-purple);
+}
+
+@media (max-width: 640px) {
+  .apex-nav {
+    padding: 0 20px;
+    height: 56px;
+  }
+  .apex-nav__links {
+    gap: 16px;
+  }
+  .apex-nav__links a {
+    font-size: 13px;
+  }
+}
+
+/* Explore further button */
+.btn-explore {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  background: none;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.btn-explore:hover {
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+}

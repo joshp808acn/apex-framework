@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX — Framework explorer</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/framework.css">
+</head>
+<body>
+  <nav class="apex-nav" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="apex-nav__logo">AI Patient Experience Framework (APEX)</a>
+    <ul class="apex-nav__links">
+      <li><a href="context.html">The case</a></li>
+      <li><a href="framework.html" class="active">Framework</a></li>
+      <li><a href="journey.html">Journey map</a></li>
+      <li><a href="accountability.html">Accountability</a></li>
+    </ul>
+  </nav>
+
+  <div class="framework-content">
+
+    <header class="framework-header">
+      <div class="framework-header__meta">APEX — Seven principles</div>
+      <h1>Framework explorer</h1>
+      <p>Select a principle to explore its overview, failure modes, and vendor assessment questions.</p>
+    </header>
+
+    <div id="principle-grid" class="principle-grid" role="list" aria-label="APEX principles"></div>
+
+    <div id="principle-hint" class="principle-hint">
+      <span class="principle-hint__arrow">↓</span>
+      <span>Select a principle to explore its definition, failure modes, and vendor questions</span>
+    </div>
+
+    <div id="detail-panel" class="detail-panel" role="region" aria-label="Principle detail"></div>
+
+  </div>
+
+  <script src="../scripts/data.js"></script>
+  <script src="../scripts/framework.js"></script>
+</body>
+</html>
