@@ -51,7 +51,7 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 15px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -63,9 +63,9 @@ body {
   line-height: 1.5;
 }
 
-h1 { font-size: 26px; font-weight: 500; }
-h2 { font-size: 22px; font-weight: 500; }
-h3 { font-size: 16px; font-weight: 500; }
+h1 { font-size: 28px; font-weight: 500; }
+h2 { font-size: 24px; font-weight: 500; }
+h3 { font-size: 17px; font-weight: 500; }
 
 .label {
   font-size: 11px;
@@ -75,8 +75,15 @@ h3 { font-size: 16px; font-weight: 500; }
   color: var(--color-text-tertiary);
 }
 
-.text-secondary { color: var(--color-text-secondary); font-size: 13px; }
-.text-tertiary  { color: var(--color-text-tertiary);  font-size: 13px; }
+.text-secondary { color: var(--color-text-secondary); font-size: 14px; }
+.text-tertiary  { color: var(--color-text-tertiary);  font-size: 14px; }
+
+@media (min-width: 1440px) {
+  html { font-size: 16px; }
+  h1 { font-size: 32px; }
+  h2 { font-size: 27px; }
+  h3 { font-size: 18px; }
+}
 
 /* Nav */
 .apex-nav {

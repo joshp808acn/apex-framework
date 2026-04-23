@@ -1,6 +1,6 @@
 :root {
   --serif: var(--font-serif);
-  --context-max: 780px;
+  --context-max: 900px;
 }
 
 body {
