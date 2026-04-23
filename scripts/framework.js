@@ -84,15 +84,6 @@
       });
     });
 
-    detailPanel.querySelectorAll('.btn-explore').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var prompt = btn.dataset.tab === 'failure'
-          ? principle.failurePrompt
-          : principle.explorePrompt;
-        console.log('[APEX] ' + principle.number + ' ' + principle.name + ' — ' + btn.dataset.tab);
-        console.log('[APEX] ' + prompt);
-      });
-    });
   }
 
   function renderOverviewTab(p) {
@@ -116,12 +107,11 @@
           '<div class="danger-block__text">' + p.overview.ifFails + '</div>' +
         '</div>' +
       '</div>' +
-    '</div>' +
-    '<button class="btn-explore" data-tab="overview">Explore further &rarr;</button>';
+    '</div>';
   }
 
   function renderFailureTab(p) {
-    var cards = p.failures.map(function (f) {
+    return p.failures.map(function (f) {
       return '<div class="failure-mode-card">' +
         '<div class="failure-mode-header">' +
           '<span class="failure-mode-name">' + f.name + '</span>' +
@@ -140,11 +130,10 @@
         '<div class="failure-mode-source">' + f.source + '</div>' +
       '</div>';
     }).join('');
-    return cards + '<button class="btn-explore" data-tab="failure">Explore further &rarr;</button>';
   }
 
   function renderVendorTab(p) {
-    var cards = p.vendor.map(function (v) {
+    return p.vendor.map(function (v) {
       return '<div class="vendor-card">' +
         '<div class="vendor-card__header">' +
           '<span class="category-tag category-tag--' + v.tag + '">' + v.label + '</span>' +
@@ -153,8 +142,8 @@
         '<p class="vendor-card__intent">' + v.intent + '</p>' +
       '</div>';
     }).join('');
-    return cards + '<button class="btn-explore" data-tab="vendor">Explore further &rarr;</button>';
   }
 
   renderGrid();
+  selectPrinciple(APEX.principles[0].id);
 })();
