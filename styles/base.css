@@ -79,15 +79,15 @@ h3 { font-size: 17px; font-weight: 500; }
 .text-tertiary  { color: var(--color-text-tertiary);  font-size: 14px; }
 
 @media (min-width: 1024px) {
-  html { font-size: 19px; }
-  h1 { font-size: 35px; }
-  h2 { font-size: 30px; }
-  h3 { font-size: 21px; }
-  .text-secondary { font-size: 17px; }
-  .text-tertiary  { font-size: 17px; }
-  .apex-nav { height: 72px; padding: 0 48px; }
-  .apex-nav__logo { font-size: 22px; }
-  .apex-nav__links a { font-size: 16px; }
+  html { font-size: 24px; }
+  h1 { font-size: 44px; }
+  h2 { font-size: 38px; }
+  h3 { font-size: 26px; }
+  .text-secondary { font-size: 21px; }
+  .text-tertiary  { font-size: 21px; }
+  .apex-nav { height: 80px; padding: 0 48px; }
+  .apex-nav__logo { font-size: 27px; }
+  .apex-nav__links a { font-size: 20px; }
 }
 
 /* Nav */

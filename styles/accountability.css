@@ -325,14 +325,14 @@ body { background: var(--color-bg-secondary); }
 }
 
 @media (min-width: 1024px) {
-  .accountability-header p { font-size: 17px; }
-  .acct-col-header__abbr { font-size: 16px; }
-  .acct-row-name { font-size: 16px; }
-  .acct-detail__title { font-size: 25px; }
-  .acct-detail__desc { font-size: 16px; }
-  .acct-owns__value { font-size: 16px; }
-  .must-ask-block__text { font-size: 17px; }
-  .if-absent-block__text { font-size: 16px; }
+  .accountability-header p { font-size: 21px; }
+  .acct-col-header__abbr { font-size: 20px; }
+  .acct-row-name { font-size: 20px; }
+  .acct-detail__title { font-size: 31px; }
+  .acct-detail__desc { font-size: 20px; }
+  .acct-owns__value { font-size: 20px; }
+  .must-ask-block__text { font-size: 21px; }
+  .if-absent-block__text { font-size: 20px; }
 }
 
 /* Responsive */

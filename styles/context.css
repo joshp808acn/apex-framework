@@ -478,18 +478,18 @@ body {
 }
 
 @media (min-width: 1024px) {
-  :root { --context-max: 1100px; }
-  .hero-lead { font-size: 22px; }
-  .body-text { font-size: 20px; }
-  .change-title { font-size: 17px; }
-  .change-text { font-size: 16px; }
-  .era-title { font-size: 25px; }
-  .era-desc { font-size: 16px; }
-  .why-card-title { font-size: 19px; }
-  .why-card-text { font-size: 16px; }
-  .contrast-block h3 { font-size: 27px; }
-  .contrast-list li { font-size: 16px; }
-  .apex-list li { font-size: 17px; }
+  :root { --context-max: 1300px; }
+  .hero-lead { font-size: 27px; }
+  .body-text { font-size: 25px; }
+  .change-title { font-size: 21px; }
+  .change-text { font-size: 20px; }
+  .era-title { font-size: 31px; }
+  .era-desc { font-size: 20px; }
+  .why-card-title { font-size: 24px; }
+  .why-card-text { font-size: 20px; }
+  .contrast-block h3 { font-size: 34px; }
+  .contrast-list li { font-size: 20px; }
+  .apex-list li { font-size: 21px; }
 }
 
 @media (max-width: 640px) {

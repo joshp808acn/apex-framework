@@ -1,7 +1,7 @@
 body { background: var(--color-bg-secondary); }
 
 .framework-content {
-  max-width: 1600px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -379,20 +379,20 @@ body { background: var(--color-bg-secondary); }
 }
 
 @media (min-width: 1024px) {
-  .framework-header p { font-size: 17px; }
-  .principle-card__name { font-size: 19px; }
-  .detail-panel__name { font-size: 27px; }
-  .detail-panel__definition { font-size: 21px; }
-  .tab-btn { font-size: 16px; }
-  .overview-label { font-size: 13px; }
-  .system-impact { font-size: 17px; }
-  .moment-card__text { font-size: 16px; }
-  .danger-block__text { font-size: 16px; }
-  .failure-mode-name { font-size: 17px; }
+  .framework-header p { font-size: 21px; }
+  .principle-card__name { font-size: 24px; }
+  .detail-panel__name { font-size: 34px; }
+  .detail-panel__definition { font-size: 26px; }
+  .tab-btn { font-size: 20px; }
+  .overview-label { font-size: 16px; }
+  .system-impact { font-size: 21px; }
+  .moment-card__text { font-size: 20px; }
+  .danger-block__text { font-size: 20px; }
+  .failure-mode-name { font-size: 21px; }
   .failure-mode-breakdown,
-  .failure-mode-consequence { font-size: 16px; }
-  .vendor-card__question { font-size: 17px; }
-  .vendor-card__intent { font-size: 15px; }
+  .failure-mode-consequence { font-size: 20px; }
+  .vendor-card__question { font-size: 21px; }
+  .vendor-card__intent { font-size: 19px; }
 }
 
 @media (max-width: 900px) {
